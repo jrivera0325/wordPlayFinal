@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var mySentence: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    @IBAction func fullSentence(_ sender: Any) {
+        let fragment = myLabel.text!
+        let myWord = mySentence.text!
+        
+    }
+    
 }
 
